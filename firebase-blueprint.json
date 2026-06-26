@@ -1,0 +1,50 @@
+{
+  "databaseId": "(default)",
+  "entities": [
+    {
+      "name": "User",
+      "collectionPath": "users",
+      "documentId": "userId",
+      "fields": [
+        { "name": "UserID", "type": "string", "required": true },
+        { "name": "Username", "type": "string", "required": true },
+        { "name": "Name", "type": "string", "required": true },
+        { "name": "Avatar", "type": "string", "required": false },
+        { "name": "Bio", "type": "string", "required": false }
+      ]
+    },
+    {
+      "name": "Post",
+      "collectionPath": "posts",
+      "documentId": "postId",
+      "fields": [
+        { "name": "PostID", "type": "string", "required": true },
+        { "name": "AuthorID", "type": "string", "required": true },
+        { "name": "VideoURL", "type": "string", "required": true },
+        { "name": "ThumbnailURL", "type": "string", "required": false },
+        { "name": "Caption", "type": "string", "required": false }
+      ]
+    },
+    {
+      "name": "Like",
+      "collectionPath": "likes",
+      "documentId": "likeId",
+      "fields": [
+        { "name": "LikeID", "type": "string", "required": true },
+        { "name": "UserID", "type": "string", "required": true },
+        { "name": "PostID", "type": "string", "required": true }
+      ]
+    },
+    {
+      "name": "Comment",
+      "collectionPath": "comments",
+      "documentId": "commentId",
+      "fields": [
+        { "name": "CommentID", "type": "string", "required": true },
+        { "name": "PostID", "type": "string", "required": true },
+        { "name": "AuthorID", "type": "string", "required": true },
+        { "name": "Comment", "type": "string", "required": true }
+      ]
+    }
+  ]
+}
