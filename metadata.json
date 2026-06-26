@@ -1,0 +1,6 @@
+{
+  "name": "Pears",
+  "description": "Lightweight social media platform inspired by TikTok and Instagram",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
